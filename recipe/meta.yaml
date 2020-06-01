@@ -1,5 +1,5 @@
 {% set name = "subversion" %}
-{% set version = "1.13.0" %}
+{% set version = "1.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://downloads.apache.org/subversion/subversion-{{ version }}.tar.bz2
-  sha256: bc50ce2c3faa7b1ae9103c432017df98dfd989c4239f9f8270bb3a314ed9e5bd
+  sha256: 6ba8e218f9f97a83a799e58a3c6da1221d034b18d9d8cbbcb6ec52ab11722102
 
 build:
-  number: 1
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
 
 requirements:
   build:
@@ -54,7 +54,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: 'Enterprise-class centralized version control for the masses'
+  summary: Enterprise-class centralized version control for the masses
   doc_url: https://subversion.apache.org/docs/
   dev_url: https://subversion.apache.org/source-code.html
 
